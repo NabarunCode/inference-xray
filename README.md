@@ -6,17 +6,17 @@
   <img src="https://img.shields.io/badge/python-3.12-3776AB?logo=python&logoColor=white" alt="Python 3.12" />
   <img src="https://img.shields.io/badge/UI-Gradio-FF7C00" alt="Gradio" />
   <img src="https://img.shields.io/badge/inference-vLLM-1D9E75" alt="vLLM" />
-  <img src="https://img.shields.io/badge/status-early%20build-orange" alt="Status: early build" />
+  <img src="https://img.shields.io/badge/status-early%20build-7C3AED" alt="Status: early build" />
   <img src="https://img.shields.io/badge/license-TBD-lightgrey" alt="License TBD" />
 </p>
 
 ## What if Wireshark existed for AI?
 
-The first time I opened Wireshark, networking stopped being magic. Packets, handshakes, DNS lookups — all of it, visible.
+The first time I opened Wireshark, networking stopped feeling like magic. Packets. TCP handshakes. DNS lookups. I could finally see what was happening.
 
-Every time I press Enter on an LLM prompt, I get the opposite feeling. Tokens get created, attention shifts, the KV cache grows, sampling picks a word — and none of it is visible.
+Years later, while learning AI, I found myself wanting that same visibility. Every time I press Enter on an LLM prompt, I get the opposite feeling. Tokens get created, attention shifts, the KV cache grows, sampling picks a word — and none of it is visible.
 
-**Inference X-Ray** is me building that visibility. One prompt, one continuous, watchable journey from keystroke to token.
+**Inference X-Ray** makes that visible. One prompt, one continuous, watchable journey from keystroke to token.
 
 <p align="center">
   <img src="assets/ui-preview.svg" alt="Concept preview of the Inference X-Ray interface" width="100%" />
@@ -28,7 +28,7 @@ Every time I press Enter on an LLM prompt, I get the opposite feeling. Tokens ge
 
 You type:
 
-> **"Explain gravity like I'm five."**
+> **"Why is the sky blue?"**
 
 Instead of just getting an answer, you watch the prompt travel through the model — live:
 
@@ -38,6 +38,8 @@ Prompt → Tokenizer → Embeddings → Transformer Layers → Self-Attention
 ```
 
 Every stage is visible. Every decision is inspectable. Nothing is hidden behind an API call.
+
+Click into any stage — Tokenizer, Attention, KV Cache, whatever you're curious about — and see exactly what happened there for that specific request. Useful when an output looks wrong or latency spikes and you need to find where. Just as useful when nothing's broken and you're a student trying to actually understand what a transformer does, instead of memorizing it for an exam.
 
 ## Why this exists
 
@@ -50,6 +52,17 @@ Most AI tools answer *"what did the model say?"* Inference X-Ray answers the har
 - Why does streaming feel instant?
 
 Not another chatbot. The tool I wish existed when I started learning inference.
+
+## Why the name?
+
+We already have tools that let us inspect systems we'd otherwise treat as black boxes:
+
+- Wireshark for networks
+- Process Explorer for operating systems
+- Chrome DevTools for web applications
+- Debuggers for code
+
+Inference X-Ray extends that same idea to AI — inspecting the complete inference pipeline, from the first token to the last.
 
 ## Explore every stage
 
@@ -99,6 +112,6 @@ Early stage, built in public. Ideas, issues, and discussion are welcome. If this
 ---
 
 <p align="center">
-  <b>Wireshark didn't teach me networking. It made networking visible.</b><br/>
+  <b>Wireshark didn't make networking simple. It made it visible.</b><br/>
   <b>Inference X-Ray aims to do the same for AI.</b>
 </p>
