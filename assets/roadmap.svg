@@ -1,0 +1,54 @@
+<svg width="1120" height="240" viewBox="0 0 1120 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Inference X-Ray roadmap</title>
+  <desc id="desc">Seven milestone roadmap: Foundation done, Gradio Fundamentals current at Lesson 1.4, then vLLM Fundamentals, Explorers, Dashboard, Model Comparison, and Pipeline Explorer all upcoming</desc>
+  <rect width="1120" height="240" fill="#FFFFFF"/>
+
+  <line x1="80" y1="90" x2="1040" y2="90" stroke="#E5E5E0" stroke-width="2"/>
+  <line x1="80" y1="90" x2="240" y2="90" stroke="#1D9E75" stroke-width="2"/>
+  <line x1="240" y1="90" x2="1040" y2="90" stroke="#D4D4D0" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <g>
+    <circle cx="80" cy="90" r="16" fill="#0F6E56"/>
+    <text x="80" y="95" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle">&#10003;</text>
+    <text x="80" y="130" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#18181B" text-anchor="middle">Foundation</text>
+    <text x="80" y="148" font-family="Arial, sans-serif" font-size="11" fill="#71717A" text-anchor="middle">done</text>
+  </g>
+
+  <g>
+    <circle cx="240" cy="90" r="20" fill="#1D9E75"/>
+    <circle cx="240" cy="90" r="26" fill="none" stroke="#1D9E75" stroke-width="1" opacity="0.35"/>
+    <text x="240" y="94" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="240" y="132" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#0F6E56" text-anchor="middle">Gradio Fundamentals</text>
+    <text x="240" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1D9E75" text-anchor="middle">current &#183; Lesson 1.4 Blocks</text>
+  </g>
+
+  <g>
+    <circle cx="400" cy="90" r="16" fill="#FFFFFF" stroke="#D4D4D0" stroke-width="2" stroke-dasharray="3 3"/>
+    <text x="400" y="130" font-family="Arial, sans-serif" font-size="13" font-weight="500" fill="#3F3F46" text-anchor="middle">vLLM Fundamentals</text>
+    <text x="400" y="148" font-family="Arial, sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">next</text>
+  </g>
+
+  <g>
+    <circle cx="560" cy="90" r="16" fill="#FFFFFF" stroke="#D4D4D0" stroke-width="2" stroke-dasharray="3 3"/>
+    <text x="560" y="130" font-family="Arial, sans-serif" font-size="13" font-weight="500" fill="#3F3F46" text-anchor="middle">Explorers</text>
+    <text x="560" y="148" font-family="Arial, sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">tokenizer &#8594; attention</text>
+  </g>
+
+  <g>
+    <circle cx="720" cy="90" r="16" fill="#FFFFFF" stroke="#D4D4D0" stroke-width="2" stroke-dasharray="3 3"/>
+    <text x="720" y="130" font-family="Arial, sans-serif" font-size="13" font-weight="500" fill="#3F3F46" text-anchor="middle">Dashboard</text>
+    <text x="720" y="148" font-family="Arial, sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">GPU &amp; throughput</text>
+  </g>
+
+  <g>
+    <circle cx="880" cy="90" r="16" fill="#FFFFFF" stroke="#D4D4D0" stroke-width="2" stroke-dasharray="3 3"/>
+    <text x="880" y="130" font-family="Arial, sans-serif" font-size="13" font-weight="500" fill="#3F3F46" text-anchor="middle">Model Comparison</text>
+    <text x="880" y="148" font-family="Arial, sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">upcoming</text>
+  </g>
+
+  <g>
+    <circle cx="1040" cy="90" r="16" fill="#FFFFFF" stroke="#0F6E56" stroke-width="2" stroke-dasharray="3 3"/>
+    <text x="1040" y="130" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#0F6E56" text-anchor="middle">Pipeline Explorer</text>
+    <text x="1040" y="148" font-family="Arial, sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">capstone</text>
+  </g>
+</svg>

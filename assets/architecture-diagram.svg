@@ -1,0 +1,55 @@
+<svg width="760" height="770" viewBox="0 0 760 770" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Inference X-Ray architecture</title>
+  <desc id="desc">Five layered boxes connected by arrows: UI, Application, Inference, Model, Hardware</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#0F6E56"/>
+    </marker>
+  </defs>
+  <rect width="760" height="770" fill="#FFFFFF"/>
+
+  <line x1="380" y1="130" x2="380" y2="188" stroke="#0F6E56" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="280" x2="380" y2="338" stroke="#0F6E56" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="430" x2="380" y2="488" stroke="#0F6E56" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="580" x2="380" y2="638" stroke="#0F6E56" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="100" y="40" width="560" height="90" rx="10" fill="#F5F5F4" stroke="#1D9E75" stroke-width="1"/>
+    <circle cx="140" cy="85" r="18" fill="#E1F5EE" stroke="#0F6E56"/>
+    <text x="140" y="91" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0F6E56" text-anchor="middle">1</text>
+    <text x="175" y="78" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#18181B">User Interface &#8212; Gradio</text>
+    <text x="175" y="102" font-family="Arial, sans-serif" font-size="13" fill="#52525B">Collects input, displays responses, visualizations &amp; metrics. No inference logic.</text>
+  </g>
+
+  <g>
+    <rect x="100" y="190" width="560" height="90" rx="10" fill="#F5F5F4" stroke="#1D9E75" stroke-width="1"/>
+    <circle cx="140" cy="235" r="18" fill="#E1F5EE" stroke="#0F6E56"/>
+    <text x="140" y="241" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0F6E56" text-anchor="middle">2</text>
+    <text x="175" y="228" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#18181B">Application &#8212; Python</text>
+    <text x="175" y="252" font-family="Arial, sans-serif" font-size="13" fill="#52525B">Validates requests, transforms data, coordinates visualizers &amp; state.</text>
+  </g>
+
+  <g>
+    <rect x="100" y="340" width="560" height="90" rx="10" fill="#F5F5F4" stroke="#1D9E75" stroke-width="1.5"/>
+    <circle cx="140" cy="385" r="18" fill="#1D9E75"/>
+    <text x="140" y="391" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="175" y="378" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#18181B">Inference &#8212; vLLM</text>
+    <text x="175" y="402" font-family="Arial, sans-serif" font-size="13" fill="#52525B">Loads models, manages GPU memory, batching, KV cache, streams tokens.</text>
+  </g>
+
+  <g>
+    <rect x="100" y="490" width="560" height="90" rx="10" fill="#F5F5F4" stroke="#1D9E75" stroke-width="1"/>
+    <circle cx="140" cy="535" r="18" fill="#E1F5EE" stroke="#0F6E56"/>
+    <text x="140" y="541" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0F6E56" text-anchor="middle">4</text>
+    <text x="175" y="528" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#18181B">Model &#8212; Hugging Face (.safetensors)</text>
+    <text x="175" y="552" font-family="Arial, sans-serif" font-size="13" fill="#52525B">Weights, tokenizer, config &#8212; starting with Gemma.</text>
+  </g>
+
+  <g>
+    <rect x="100" y="640" width="560" height="90" rx="10" fill="#F5F5F4" stroke="#1D9E75" stroke-width="1"/>
+    <circle cx="140" cy="685" r="18" fill="#E1F5EE" stroke="#0F6E56"/>
+    <text x="140" y="691" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#0F6E56" text-anchor="middle">5</text>
+    <text x="175" y="678" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#18181B">Hardware &#8212; CUDA / NVIDIA GPU</text>
+    <text x="175" y="702" font-family="Arial, sans-serif" font-size="13" fill="#52525B">Matrix multiplication, memory allocation, parallel computation.</text>
+  </g>
+</svg>

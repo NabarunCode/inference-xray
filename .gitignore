@@ -1,0 +1,43 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Distribution / build
+build/
+dist/
+*.egg-info/
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Type checker
+.mypy_cache/
+
+# Linter
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# Operating System
+Thumbs.db
+.DS_Store
+
+# Environment variables
+.env
+
+# Local AI models (we'll create this later)
+models/
+
+# Logs
+*.log
